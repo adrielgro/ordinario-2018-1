@@ -1,15 +1,15 @@
 <?php
-class UsuariosModel extends ModeloBase{
+class CursosModel extends ModeloBase{
     private $table;
 
     public function __construct($adapter){
-        $this->table="usuarios";
+        $this->table="cursos";
         parent::__construct($this->table, $adapter);
     }
 
     //Metodos de consulta
     public function getUnUsuario(){
-        $query="SELECT * FROM usuarios WHERE email='adrielgro@gmail.com'";
+        $query="SELECT * FROM cursos WHERE profesor='Adriel'";
         $usuario=$this->ejecutarSql($query);
         return $usuario;
     }
