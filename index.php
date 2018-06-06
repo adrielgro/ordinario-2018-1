@@ -1,6 +1,6 @@
 <?php require('includes/header.php'); ?>
 
-<div id="content">
+<div class="container-fluid">
 	<p>Contenido</p>
 </div>
 
