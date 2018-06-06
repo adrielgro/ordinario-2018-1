@@ -1,3 +1,3 @@
 <?php
-	echo "Hola :D";
+	echo "Ahh prro traes el ominitrix :v";
 ?>
