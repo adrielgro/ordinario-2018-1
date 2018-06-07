@@ -1,9 +1,9 @@
 <?php require('includes/header.php'); ?>
 
-<div class="container-fluid">
+<div class="container-fluid" style="text-align: center;">
   <?php if(isset($allusers) && count($allusers)>=1) {?>
-        <div class="col-lg-7">
-            <h3>Productos</h3>
+        <div class="col-lg-12">
+            <h3>Profesor</h3>
             <hr/>
         </div>
          <section class="col-lg-7 producto" style="height:400px;overflow-y:scroll;">
