@@ -25,8 +25,7 @@ class EntidadBase{
     }
 
     public function getAll(){
-        $query=$this->db->query("SELECT * FROM $this->table");
-        // $query=$this->db->query("SELECT * FROM $this->table ORDER BY id DESC");
+        $query=$this->db->query("SELECT * FROM $this->table ORDER BY id DESC");
 
         while ($row = $query->fetch_object()) {
            $resultSet[]=$row;

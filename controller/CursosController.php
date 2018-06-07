@@ -10,13 +10,18 @@ class CursosController extends ControladorBase{
         $this->adapter=$this->conectar->conexion();
     }
 
-    public function index(){
+    public function index() {
 
         //Creamos el objeto curso
         $curso=new Curso($this->adapter);
 
         //Conseguimos todos los cursos
         $allcourses=$curso->getAll();
+
+        foreach ($allcourses as $curso) {
+          $horarios = new Horario($this->adapter);
+          $curso->horarios = $horarios->getHorariosCurso($curso->id);
+        }
 
         //Cargamos la vista index y le pasamos valores
         $this->view("cursos",array(
