@@ -2,7 +2,7 @@
 
 <div class="container-fluid" style="text-align: center;">
   <?php if(isset($allusers) && count($allusers)>=1) {?>
-        <div class="col-lg-7">
+        <div class="col-lg-12">
             <h3>Profesor</h3>
             <hr/>
         </div>
