@@ -1,9 +1,6 @@
 <?php require('includes/header.php'); ?>
 
 <div class="container-fluid">
-	<p>Contenido</p>
-
-
   <?php if(isset($allusers) && count($allusers)>=1) {?>
         <div class="col-lg-7">
             <h3>Productos</h3>

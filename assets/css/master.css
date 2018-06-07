@@ -1,3 +1,9 @@
 .navbar {
   margin-bottom: 10px;
 }
+
+.form-control-plaintext {
+  border: 1px solid #cbcbcb;
+  border-radius: 4px;
+  padding-left: 10px;
+}
