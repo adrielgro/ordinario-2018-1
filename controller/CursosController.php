@@ -13,14 +13,18 @@ class CursosController extends ControladorBase{
     public function index() {
 
         //Creamos el objeto curso
-        $curso=new Curso($this->adapter);
+        $curso    = new Curso($this->adapter);
+        $horarios = new Horario($this->adapter);
+        $salones  = new Salon($this->adapter);
 
         //Conseguimos todos los cursos
         $allcourses=$curso->getAll();
 
         foreach ($allcourses as $curso) {
-          $horarios = new Horario($this->adapter);
           $curso->horarios = $horarios->getHorariosCurso($curso->id);
+          foreach ($curso->horarios as $key => $horario) {
+            $curso->horarios[$key][6] = $salones->getSalonHorario($horario[5]); // salon
+          }
         }
 
         //Cargamos la vista index y le pasamos valores

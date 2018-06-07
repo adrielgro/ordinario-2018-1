@@ -12,13 +12,8 @@
 
   <body>
     <!-- Menu -->
-<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="/"><img src="<?=basename('/assets').'/img/banner.png'?>" style="width: 300px; height: 50px;"></a>
-=======
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/"><img src="../assets/img/banner.png" style="width: 300px; height: 50px;"></a>
->>>>>>> master
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,17 +27,10 @@
             <a class="nav-link" href="?controller=cursos">Cursos</a>
           </li>
           <li class="nav-item">
-<<<<<<< HEAD
             <a class="nav-link" href="?controller=cursos">Feedback</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="?controller=cursos">Calificaciones</a>
-=======
-            <a class="nav-link" href="/">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/">Calificaciones</a>
->>>>>>> master
           </li>
         </ul>
       </div>

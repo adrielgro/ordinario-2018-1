@@ -74,7 +74,8 @@
 							"<?=$horario[2]?>",
 							"<?=$horario[3]?>",
 							"<?=$curso->nombre?>",
-							"<?=$curso->profesor?>"
+							"<?=$curso->profesor?>",
+							"<?=$horario[6]?>",
             ],
 						<?php endforeach; ?>
 					];
@@ -86,13 +87,12 @@
 
 			var table = "";
 
-
 			cursos[id.value].forEach(function(element) {
 				table += "<tr>";
 				table += "<td>" + element[0] + "</td>";
 				table += "<td>" + element[1] + "</td>";
 				table += "<td>" + element[2] + " - " + element[3] + "</td>";
-				table += "<td>" + element[5] + "</td>";
+				table += "<td>" + element[6] + "</td>";
 				table += "</tr>";
 			});
 
